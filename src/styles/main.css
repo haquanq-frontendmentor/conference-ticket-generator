@@ -1,0 +1,56 @@
+@import "./base/fonts.css";
+@import "./base/variables.css";
+@import "./base/reset.css";
+
+@import "./components/text-field.css";
+@import "./components/file-field.css";
+
+@import "./components/sign-up.css";
+@import "./components/ticket.css";
+
+@import "./utils/a11y.css";
+
+.main {
+    padding-inline: 1rem;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/background-mobile.png");
+
+    @media (--tablet) {
+        background-image: url("/assets/images/background-tablet.png");
+    }
+
+    @media (--laptop) {
+        background-image: url("/assets/images/background-desktop.png");
+    }
+
+    &__bg-pattern {
+        position: absolute;
+        pointer-events: none;
+
+        &--left {
+            bottom: 0;
+            left: 0;
+            max-width: 80%;
+        }
+
+        &--right {
+            right: 0;
+            top: 1.5rem;
+            max-width: 30%;
+        }
+
+        &--line {
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        &--circle {
+            top: 0;
+            left: 0;
+        }
+    }
+}

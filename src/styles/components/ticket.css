@@ -1,0 +1,98 @@
+.ticket {
+    position: relative;
+    margin-block-start: clamp(3rem, 0.1374rem + 12.2137vw, 6rem);
+
+    &__content {
+        position: absolute;
+        inset: 0;
+        padding-block-start: clamp(1.0625rem, 0.5258rem + 2.2901vw, 1.625rem);
+        padding-inline-start: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
+        padding-block-end: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__id {
+        position: absolute;
+        font-size: clamp(1.375rem, 0.8979rem + 2.0356vw, 1.875rem);
+        right: clamp(1.0625rem, -0.1899rem + 5.3435vw, 2.375rem);
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: var(--font-medium);
+        letter-spacing: -0.03em;
+        color: var(--color-neutral-500);
+        writing-mode: vertical-rl;
+    }
+
+    &__intro-logo {
+        margin-block-start: 0.25rem;
+        width: clamp(1.875rem, 1.2786rem + 2.5445vw, 2.5rem);
+    }
+
+    &__intro {
+        display: flex;
+        align-items: start;
+        gap: clamp(0.75rem, 0.2729rem + 2.0356vw, 1.25rem);
+    }
+
+    &__intro-description {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.625rem, 0.2672rem + 1.5267vw, 1rem);
+    }
+
+    &__intro-name {
+        font-size: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
+        font-weight: var(--font-bold);
+        letter-spacing: -0.04em;
+    }
+
+    &__intro-date {
+        font-weight: var(--font-medium);
+        font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: clamp(0.75rem, 0.5115rem + 1.0178vw, 1rem);
+    }
+
+    &__person-avatar {
+        width: clamp(2.8125rem, 0.7252rem + 8.9059vw, 5rem);
+        aspect-ratio: 1;
+        border-radius: var(--rounded-xs);
+    }
+
+    &__person-description {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.25rem, -0.2271rem + 2.0356vw, 0.75rem);
+    }
+
+    &__person-name {
+        letter-spacing: -0.03em;
+        font-weight: var(--font-medium);
+        font-size: clamp(1.25rem, 0.6536rem + 2.5445vw, 1.875rem);
+    }
+
+    &__person-username {
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        gap: clamp(0.25rem, -0.2271rem + 2.0356vw, 0.75rem);
+        font-size: clamp(0.875rem, 0.5172rem + 1.5267vw, 1.25rem);
+        color: var(--color-neutral-300);
+
+        &::before {
+            border-radius: 0.25rem;
+            content: "";
+            width: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
+            aspect-ratio: 1;
+            background-image: url("/assets/images/icon-github.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}

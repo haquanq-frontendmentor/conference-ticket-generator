@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+  </head>
+  <body>
+    <main class="main">
+      <img
+        class="main__bg-pattern main__bg-pattern--left"
+        src="./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"
+        alt=""
+      />
+      <img
+        class="main__bg-pattern main__bg-pattern--right"
+        src="./assets/images/pattern-squiggly-line-top.svg"
+        alt=""
+      />
+      <img class="main__bg-pattern main__bg-pattern--line" src="./assets/images/pattern-lines.svg" alt="" />
+      <img class="main__bg-pattern main__bg-pattern--circle" src="./assets/images/pattern-circle.svg" alt="" />
+      <div class="sign-up">
+        <img class="sign-up__logo" src="./assets/images/logo-full.svg" alt="" />
+        <h1 class="sign-up__title" aria-live="polite">Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <p class="sign-up__description" aria-live="polite">
+          Secure your spot at next year's biggest coding conference.
+        </p>
+
+        <form class="sign-up__form" novalidate>
+          <div class="file-field" id="avatar-file-field">
+            <label class="file-field__label" for="avatar-input">Upload Avatar</label>
+            <div class="file-field__input-wrapper">
+              <input
+                class="file-field__input"
+                id="avatar-input"
+                type="file"
+                name="avatar"
+                required
+                accept="image/jpeg,image/png"
+                aria-invalid="false"
+                aria-describedby="avatar-input-hint"
+              />
+              <div class="file-field__thumbnail"></div>
+              <span class="file-field__instruction">Drag and drop or click to upload</span>
+            </div>
+            <span class="file-field__hint" id="avatar-input-hint">
+              Upload your photo (JPG or PNG, max size: 500KB).
+            </span>
+          </div>
+          <div class="text-field" id="full-name-text-field">
+            <label class="text-field__label" for="full-name-input">Full Name</label>
+            <input
+              class="text-field__input"
+              id="full-name-input"
+              type="text"
+              name="full-name"
+              required
+              placeholder="John Rockstar*"
+              maxlength="100"
+              aria-invalid="false"
+              aria-describedby="full-name-input-hint"
+            />
+            <span class="text-field__hint" id="full-name-input-hint"></span>
+          </div>
+          <div class="text-field" id="email-text-field">
+            <label class="text-field__label" for="email-input">Email Address</label>
+            <input
+              class="text-field__input"
+              id="email-input"
+              type="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+              aria-invalid="false"
+              aria-describedby="email-input-hint"
+            />
+            <span class="text-field__hint" id="email-input-hint"></span>
+          </div>
+          <div class="text-field" id="username-text-field">
+            <label class="text-field__label" for="username-input">GitHub Username</label>
+            <input
+              class="text-field__input"
+              id="username-input"
+              type="text"
+              name="username"
+              required
+              placeholder="@yourusername"
+              maxlength="39"
+              aria-invalid="false"
+              aria-describedby="username-input-hint"
+            />
+            <span class="text-field__hint" id="username-input-hint"></span>
+          </div>
+          <button class="sign-up__submit-btn" type="submit">Generate My Ticket</button>
+        </form>
+
+        <div class="ticket" hidden>
+          <img class="tocket__bg-pattern" src="./assets/images/pattern-ticket.svg" alt="" />
+          <span class="ticket__id">#01609</span>
+          <div class="ticket__content">
+            <div class="ticket__intro">
+              <img class="ticket__intro-logo" src="./assets/images/logo-mark.svg" alt="" />
+              <div class="ticket__intro-description">
+                <span class="ticket__intro-name">Coding Conf</span>
+                <p class="ticket__intro-date">
+                  <time datetime="31-1-2025">Jan 31, 2025 / </time>Austin, <abbr title="Texas">TX</abbr>
+                </p>
+              </div>
+            </div>
+            <div class="ticket__person">
+              <img class="ticket__person-avatar" src="./assets/images/image-avatar.jpg" alt="" />
+              <div class="ticket__person-description">
+                <span class="ticket__person-name">Jonatan Kristof</span>
+                <span class="ticket__person-username">@jonatankristof0101</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>

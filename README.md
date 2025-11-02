@@ -3,7 +3,7 @@
 This is a solution to the [Conference ticket generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <p>
-  <a href="">
+  <a href="https://www.frontendmentor.io/solutions/accessible-conference-ticket-generator-form-mobile-first-responsive-7AHxXMK-cQ">
     <img
       alt="Solution post"
       src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
@@ -19,6 +19,8 @@ This is a solution to the [Conference ticket generator challenge on Frontend Men
       src="https://img.shields.io/badge/MIT-blue?label=license"
   /></a>
 </p>
+
+![](./docs/preview.jpg)
 
 ## Table of Contents
 
@@ -52,10 +54,6 @@ Accessibility
 
 - [x] Responsive accross different screen sizes
 - [x] Interactive elements have clear focus indicator
-
-### Preview (Desktop)
-
-![](./docs/design/desktop-design-form.jpg)
 
 ## :stars: Tech Stack and Approach
 
@@ -99,4 +97,4 @@ pnpm dev
 
 ## :maple_leaf: Deployment
 
-Deployed to Github Pages via Github Actions (manually triggered).
+Deployed to Github Pages via Github Action.

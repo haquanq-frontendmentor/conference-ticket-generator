@@ -1,0 +1,15 @@
+{
+  "name": "Conference Ticket Generator",
+  "featured": false,
+  "colors:": {
+    "brand": "#260161"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/conference-ticket-generator/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "junior",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/accessible-conference-ticket-generator-form-mobile-first-responsive-7AHxXMK-cQ"
+  }
+}
